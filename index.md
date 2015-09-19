@@ -82,6 +82,8 @@ To do all that, we'll have to learn a little bit about programming.
 
 *   [Python Command Reminders](commands.html)
 
+*   [29 Common Beginner Python Error on One Page](http://pythonforbiologists.com/index.php/29-common-beginner-python-errors-on-one-page/)
+
 *   [Reference](reference.html)
 *   [Discussion](discussion.html)
 *   [Instructor's Guide](instructors.html)
