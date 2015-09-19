@@ -85,3 +85,10 @@ To do all that, we'll have to learn a little bit about programming.
 *   [Reference](reference.html)
 *   [Discussion](discussion.html)
 *   [Instructor's Guide](instructors.html)
+
+## Documentation
+
+* [Python Documentation](https://docs.python.org/)
+* [NumPy Documentation](http://docs.scipy.org/doc/numpy/reference/index.html)
+* [Matplotlib Documentation](http://matplotlib.org/contents.html)
+* [Argparse Tutorial](http://docs.python.org/dev/howto/argparse.html)
