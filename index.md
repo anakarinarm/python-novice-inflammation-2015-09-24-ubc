@@ -80,6 +80,8 @@ To do all that, we'll have to learn a little bit about programming.
 
 ## Other Resources
 
+*   [Python Command Reminders](commands.html)
+
 *   [Reference](reference.html)
 *   [Discussion](discussion.html)
 *   [Instructor's Guide](instructors.html)
