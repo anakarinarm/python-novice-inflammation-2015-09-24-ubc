@@ -7,7 +7,7 @@ title: Python Reference
 #### Basic Operations
 
 *   Use `variable = value` to assign a value to a variable.
-*   Use `print first, second, third` to display values.
+*   Use `print(first, second, third)` to display values.
 *   Python counts from 0, not from 1.
 *   `#` starts a comment.
 *   Statements in a block must be indented (usually by four spaces).
