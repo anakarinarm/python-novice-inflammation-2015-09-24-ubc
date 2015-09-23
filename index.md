@@ -81,6 +81,7 @@ To do all that, we'll have to learn a little bit about programming.
 ## Other Resources
 
 *   [Day 1 Slide-deck](slides-python-1st-part.pdf)
+*   [Day 2 Slide-deck](python_slides_day2.pdf)
 
 *   [Python Command Reminders](commands.html)
 
