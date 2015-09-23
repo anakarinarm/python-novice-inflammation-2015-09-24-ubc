@@ -29,7 +29,6 @@
 \title[Shell Lesson]{Programming with Python}
 
 \subtitle[]{EOAS Software Carpentry Workshop }
-%\author[K. Ramos-Musalem ]{Karina Ramos Musalem}
 \date[Sep 2015]{September 24nd, 2015}
 
 
@@ -53,7 +52,25 @@
 
 %---------------- the presentation begins here --------------------%
 
+%-------------------------- Cool xkcd cartoon ------------------------------------------%
+
+\begin{frame}
+
+\begin{figure}[htbp]
+   \centering
+  \includegraphics[width=0.6\textwidth]{figs_slides/python_xkcd.png} 
+\end{figure}
+
+\begin{textblock*}{7cm}(6.0cm,9.0cm)
+		\centering
+			\tiny{https://xkcd.com/353 }
+\end{textblock*}
+
+
+
+\end{frame}
 %-------------------------- Intro ------------------------------------------%
+
 
 \begin{frame}{Getting started}
 
@@ -104,70 +121,52 @@ In a shell window enter these commands:}
     \item{Read tabular data from a file into a program.}
     \item{Assign values to variables.}
     \item{Select individual values and subsections from data.}
-    \item{Perform operations on arrays of data.}
-    \item{Display simple graphs.}
-\end{enumerate}
+   \end{enumerate}
+
+\begin{multicols}{2}
+\begin{itemize}
+\item import numpy
+\item numpy.loadtxt(fname=  delimiter=)
+\item weight\_kg = 55
+\item print('weight in kg:', weight\_kg)
+\item weight\_lb = 2.2 * weight\_kg
+\item type(data)
+\item data.shape
+\item data[0,0], data[0:1,0:1]
+\item data[0:10:2,1]
+\item data[:3,36:]
+\end{itemize}
+\end{multicols}
 \end{frame}
 
-%-------------------------- Challenge 01 ------------------------------------------%
-
-\begin{frame}{ }
-What does the following program print out?
-\vspace{0.5cm}
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-
-\texttt{first, second = Grace' , `Hopper'}
-
-\texttt{third, fourth = second, first}
-
-\texttt{print (third, fourth)}
-
-\end{beamerboxesrounded}
-
-\end{frame}
-
-%-------------------------- Challenge 01 - Solution ------------------------------------------%
-
-\begin{frame}{ }
-What does the following program print out?
-\vspace{0.5cm}
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-
-\texttt{first, second = `Grace' , `Hopper'}
-
-\texttt{third, fourth = second, first}
-
-\texttt{print (third, fourth)}
-
-\end{beamerboxesrounded}
-
-\alert{ANSWER:}
-
-\texttt{Hopper, Grace}
-\end{frame}
-
-
-%-------------------------- Challenge 02 ------------------------------------------%
-
-\begin{frame}{ }
-A subsection of an array is called a slice. We can take slices of character strings as well:
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-
-\texttt{element = `oxygen'\\
-print (`first three characters:', element[0:3])\\
-print (`last three characters:', element[3:6])\\}
-\end{beamerboxesrounded}
-
+%-------------------- intro 2 ---------------------------
+\begin{frame}
+\frametitle{Analyzing Patient Data cont'd}
 \begin{enumerate}
-\item{What is the value of element[:4]? What about element[4:]? Or element[:]?}
-\item{What is element[-1]? What is element[-2]? Given those answers, explain what element[1:-1] does.}
- \item{The expression element[3:3] produces an empty string, i.e., a string that contains no characters. If data holds our array of patient data, what does data[3:3, 4:4] produce? What about data[3:3, :]?}
+\setcounter{enumi}{5}
+\item    Perform operations on arrays of data.
+\item    Display simple graphs.
 \end{enumerate}
-
+\begin{multicols}{2}
+\begin{itemize}
+\item data.mean()
+\item data.std()
+\item data.mean(axis=0)
+\item \%matplotlib inline
+\item from matplotlib import pyplot
+\item pyplot.imshow(data)
+\item pyplot.show()
+\item pyplot.plot(ave\_inflammation)
+\item import matplotlib import pyplot as plt
+\item plt.subplot(1,3,1)
+\item plt.ylabel('average')
+\item plt.show()
+\end{itemize}
+\end{multicols}
 \end{frame}
+
+
+
 
 %-------------------------- AXIS ------------------------------------------%
 
@@ -181,27 +180,31 @@ print (`last three characters:', element[3:6])\\}
 \end{frame}
 
 
-%%-------------------------- Challenge 03 ------------------------------------------%
+%%-------------------------- Challenge 01 ------------------------------------------%
 
-\begin{frame}{ }
+\begin{frame}{Exercise}
+Create a single plot showing 1) the mean for each day and 2) the mean + 1 standard deviation for each day and 3) the mean - 1 standard deviation for each day.
+
+\end{frame}
+
+%% ---------------------------------- LOOPS ----------------------------------------%
+\begin{frame}{Repeating actions with loops}
 
 \begin{enumerate}
-   \item{ Why do all of our plots stop just short of the upper end of our graph? Why are the vertical lines in our plot of the minimum inflammation per day not vertical?}
+    \item{Explain what a for loop does.}
+    \item Correctly write for loops to repeat simple calculations.
+    \item{Trace changes to a loop variable as the loop runs.}
+    \item{Trace changes to other variables as they are updated by a for loop.}
+   \end{enumerate}
 
-   \item{ Create a plot showing the standard deviation of the inflammation data for each day across all patients.}
-\end{enumerate}
-
+\begin{multicols}{2}
+\begin{itemize}
+\item for char in word:
+\item len('aeiou')
+\end{itemize}
+\end{multicols}
 \end{frame}
-
-%%-------------------------- Challenge 04 ------------------------------------------%
-
-\begin{frame}{ }
-
-Modify the program to display the three plots on top of one another instead of side by side.
-
-\end{frame}
-
-%-------------------------- Challenge 05 - loops ------------------------------------------%
+%-------------------------- Challenge 02 - loops ------------------------------------------%
 
 \begin{frame}{ }
 
