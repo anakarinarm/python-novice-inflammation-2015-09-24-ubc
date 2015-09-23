@@ -80,6 +80,8 @@ To do all that, we'll have to learn a little bit about programming.
 
 ## Other Resources
 
+*   [Day 1 Slide-deck](slides-python-1st-part.pdf)
+
 *   [Python Command Reminders](commands.html)
 
 *   [29 Common Beginner Python Error on One Page](http://pythonforbiologists.com/index.php/29-common-beginner-python-errors-on-one-page/)
