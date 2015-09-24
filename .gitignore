@@ -8,3 +8,9 @@ CONDUCT.html
 *.pyc
 _site
 .DS_Store
+slides-*.aux
+slides-*.log
+slides-*.nav
+slides-*.out
+slides-*.snm
+slides-*.toc
