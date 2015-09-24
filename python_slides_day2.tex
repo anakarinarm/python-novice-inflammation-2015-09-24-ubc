@@ -2,8 +2,8 @@
 
 \usetheme{boxes}
 
- 
-\usecolortheme[RGB={34,170,34}]{structure} 
+
+\usecolortheme[RGB={34,170,34}]{structure}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphics}
@@ -30,7 +30,7 @@
 
 \section*{Functions}
 
-\begin{frame}[plain] 
+\begin{frame}[plain]
 \titlepage
 \end{frame}
 
@@ -138,26 +138,26 @@ def detect_problems(filename):
 def centre(data, desired):
     return (data - data.mean()) + desired
 \end{verbatim}
-\item 
+\item
 \begin{verbatim}
 z = numpy.zeros((2,2))
 \end{verbatim}
-\item 
+\item
 \begin{verbatim}
 print centre(z, 3)
 \end{verbatim}
-\item 
+\item
 \begin{verbatim}
 print data.std() - centred.std()
 \end{verbatim}
-\item 
+\item
 \begin{verbatim}
 def center(data, desired):
-  '''Return a new array containing the original data 
+  '''Return a new array containing the original data
      centered around the desired value.'''
   return (data - data.mean()) + desired
 \end{verbatim}
-\item 
+\item
 \begin{verbatim}
 help(centre)
 \end{verbatim}
@@ -179,7 +179,7 @@ help(centre)
 \end{block}
 \begin{block}{Example Code}
 \begin{itemize}
-\item 
+\item
 \begin{verbatim}
 def center(data, desired = 0):
 \end{verbatim}
@@ -221,12 +221,70 @@ print(fence('name', '*'))
 \begin{block}{Solution}
 \begin{verbatim}
 def fence(original, wrapper):
-    ```Returns a string with charcter wrapper added to the 
+    ```Returns a string with charcter wrapper added to the
        beginning and end of string original.```
-       
+
        return wrapper + original + wrapper
 \end{verbatim}
 \end{block}
+\end{frame}
+
+
+%---------------- TRACEBACKS & EXCEPTIONS LESSON STARTS HERE-------------------%
+
+
+\begin{frame}[label=tracebacks_exceptions]
+  \frametitle{Tracebacks and Exceptions}
+  \begin{block}{Learning Goals}
+    \begin{enumerate}
+      \item Read a traceback, and determine the following relevant pieces of information:
+      \begin{itemize}
+        \item The file, function, and line number on which the error occurred
+        \item The type of the error
+        \item The error message
+      \end{itemize}
+    \item Describe the types of situations in which the following errors occur:
+      \begin{itemize}
+        \item\texttt{SyntaxError} and \texttt{IndentationError}
+        \item\texttt{NameError}
+        \item\texttt{IndexError}
+        \item\texttt{FileNotFoundError}
+      \end{itemize}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Exercise}
+  \begin{block}{}
+    Does this code raise an exception?
+    If so, what is the name of the exception?
+    \begin{verbatim}
+      for x in range(10, -10, -1):
+          print('inverse of', x, 'is', 1/x)
+    \end{verbatim}
+    Can you modify the code so that it does what is intended,
+    but avoids the exception?
+  \end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Try/Except Blocks}
+  \begin{block}{Learning Goals}
+    \begin{enumerate}
+      \item Write error handling Python code using \texttt{try} and \texttt{except} statements.
+    \end{enumerate}
+  \end{block}
+  \begin{block}{Lesson Commands}
+    \begin{verbatim}
+      try:
+          # something that might go wrong
+      except SomeError:
+          # handle the error
+    \end{verbatim}
+  \end{block}
 \end{frame}
 
 
@@ -250,7 +308,7 @@ def fence(original, wrapper):
 %
 %\begin{figure}[htbp]
  %  \centering
-  % \includegraphics[width=0.45\textwidth]{../figures/axis.png} 
+  % \includegraphics[width=0.45\textwidth]{../figures/axis.png}
 %\end{figure}
 
 \end{frame}
