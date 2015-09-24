@@ -1,0 +1,17 @@
+\frametitle{Exercise}
+
+``Adding" two strings produces their concatenation: \texttt{'a' + 'b'} is \texttt{'ab'}. Write a function called fence that takes two parameters called original and wrapper and returns a new string that has the wrapper character at the beginning and end of the original. A call to your function should look like this:
+\begin{verbatim}
+print(fence('name', '*'))
+*name*
+\end{verbatim}
+
+\begin{block}{Solution}
+\begin{verbatim}
+def fence(original, wrapper):
+    ```Returns a string with charcter wrapper added to the
+       beginning and end of string original.```
+
+       return wrapper + original + wrapper
+\end{verbatim}
+\end{block}
