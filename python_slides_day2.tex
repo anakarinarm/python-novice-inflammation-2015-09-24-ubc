@@ -291,15 +291,21 @@ def fence(original, wrapper):
 %---------------- COMMAND LINE PROGRAMS LESSON STARTS HERE --------------------%
 
 \begin{frame}{Command-line programs}
-
+\begin{block}{Learning goals}
 \begin{enumerate}
-    \item{Create a Python module containing functions that can be imported into notebooks and other modules.}
-    \item{Use the values of command-line arguments in a program.}
+       \item{Use the values of command-line arguments in a program.}
+    \item{Handle flags and files separately in a command-line program.}
     \item{Read data from standard input in a program so that it can be used in a pipeline.}
-\end{enumerate}
+ \end{enumerate}
+ \end{block}
+ \begin{block}{Commands and functions}
+  \texttt{sys.version \\
+  sys.argv\\
+  sys.stdin}
+ \end{block}
 \end{frame}
 
-%-------------------------- Challenge 01 ------------------------------------------%
+%--------------------------  ------------------------------------------%
 
 
 \begin{frame}{Switching to shell commands}
@@ -313,42 +319,17 @@ def fence(original, wrapper):
 
 \end{frame}
 
-%-------------------------- Challenge 01 ------------------------------------------%
+%-------- Challenge 01 ------------------------------------------%
 
 \begin{frame}{ }
-Write a command-line program that does addition and subtraction:
-\vspace{0.5cm}
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-\texttt{\& python arith.py add 1 2 }
-\end{beamerboxesrounded}
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-\texttt{3}
-\end{beamerboxesrounded}
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-\texttt{\& python arith.py subtract 3 4 }
-\end{beamerboxesrounded}
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-\texttt{-1}
-\end{beamerboxesrounded}
+\begin{itemize}
+\item Rewrite \texttt{readings.py} so that it uses \texttt{-n, -m}, and \texttt{-x} instead of \texttt{--min, --mean}, and \texttt{--max} respectively. Is the code easier to read? Is the program easier to understand?
 
 
-\end{frame}
-%-------------------------- Challenge 02 ------------------------------------------%
-
-\begin{frame}{ }
-Rewrite \texttt{readings.py} so that it uses \texttt{-n, -m}, and \texttt{-x} instead of \texttt{--min, --mean}, and \texttt{--max} respectively. Is the code easier to read? Is the program easier to understand?
-
+\item Separately, modify \texttt{readings.py} so that if no action is given it displays the means of the data.
+\end{itemize}
 \end{frame}
 
-%-------------------------- Challenge 03 ------------------------------------------%
-
-\begin{frame}{ }
-Separately, modify \texttt{readings.py} so that if no action is given it displays the means of the data.
-\end{frame}
 
 %-------------------------- the document ends here ----------------------------------%
 
